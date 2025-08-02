@@ -54,8 +54,8 @@ for i in range(100):
 st.write(df)
 
 # Load and preprocess data
-calories = pd.read_csv("calories.csv")
-exercise = pd.read_csv("exercise.csv")
+calories = pd.read_csv("fitness/calories.csv")
+exercise = pd.read_csv("fitness/exercise.csv")
 
 exercise_df = exercise.merge(calories, on="User_ID")
 exercise_df.drop(columns="User_ID", inplace=True)
